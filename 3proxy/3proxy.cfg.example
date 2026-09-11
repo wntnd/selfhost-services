@@ -1,0 +1,12 @@
+# Copy this file to 3proxy.cfg and replace the example credentials.
+
+log
+nserver 1.1.1.1
+nserver 8.8.8.8
+nscache 65536
+
+auth strong
+users proxy_user:CL:change_this_password
+allow proxy_user
+socks -p1080
+flush
